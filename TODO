@@ -1,0 +1,2 @@
+worker pool is a fixed number, make it adaptive
+no way to cancel a frame in flight

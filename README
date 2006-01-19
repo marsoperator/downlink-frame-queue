@@ -1,0 +1,20 @@
+downlink-frame-queue
+
+Hands frames from a downlink dump to worker processes. Dispatch is one Perl script, workers are
+small C binaries, the glue is sh. Nothing here knows what the frames contain.
+
+  ./bin/dispatch.pl -q queue/ -w 4 -c ./worker
+
+The dispatcher reads queue/, hands each frame to a free worker over a pipe, collects exit codes and
+writes queue/done/<id> or queue/fail/<id> with the reason. A frame that fails twice goes to
+queue/dead/ and is not retried.
+
+Frame ids are the dump offset in hex. Order does not matter, workers are independent.
+
+Layout
+
+  bin/dispatch.pl   queue walker, worker pool, retry bookkeeping
+  src/worker.c      worker, reads one frame from stdin
+  scripts/requeue.sh  move a dead frame back to the queue
+  doc/queue.txt     directory layout and exit codes
+  tests/            three frames and the expected classification

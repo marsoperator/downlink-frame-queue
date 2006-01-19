@@ -1,0 +1,15 @@
+Queue layout
+
+  queue/          pending frames, one file each, name is the offset in hex
+  queue/done/     processed, exit 0
+  queue/fail/     failed once, first line of the file is the reason
+  queue/dead/     failed twice, never retried automatically
+
+Exit codes
+
+  0  frame processed
+  1  bad frame header
+  2  worker could not read the frame
+  3  worker crashed
+
+Anything other than 0 is a failure and counts toward the retry budget.
