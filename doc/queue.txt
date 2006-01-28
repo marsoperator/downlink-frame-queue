@@ -13,3 +13,4 @@ Exit codes
   3  worker crashed
 
 Anything other than 0 is a failure and counts toward the retry budget.
+- layout and exit codes
