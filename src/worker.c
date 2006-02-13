@@ -11,3 +11,4 @@ int main(void)
     fprintf(stderr, "read 0 bytes\n", n);
     return 0;
 }
+/* read a frame from stdin */
