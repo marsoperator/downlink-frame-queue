@@ -11,3 +11,4 @@ clean:
 	rm -f worker src/*.o
 
 .PHONY: test clean
+- c89
