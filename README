@@ -18,3 +18,4 @@ Layout
   scripts/requeue.sh  move a dead frame back to the queue
   doc/queue.txt     directory layout and exit codes
   tests/            three frames and the expected classification
+- usage
