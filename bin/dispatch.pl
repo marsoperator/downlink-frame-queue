@@ -8,3 +8,4 @@ my $workers = 4;
 
 print "queue $queue workers $workers\n";
 # walk the queue
+# worker pool
