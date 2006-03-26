@@ -12,3 +12,4 @@ int main(void)
     return 0;
 }
 /* read a frame from stdin */
+/* count bytes */
