@@ -19,3 +19,4 @@ Layout
   doc/queue.txt     directory layout and exit codes
   tests/            three frames and the expected classification
 - usage
+- frame ids are offsets
