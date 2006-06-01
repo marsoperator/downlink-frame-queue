@@ -10,3 +10,4 @@ print "queue $queue workers $workers\n";
 # walk the queue
 # worker pool
 # collect exit codes
+# move to fail on non zero
