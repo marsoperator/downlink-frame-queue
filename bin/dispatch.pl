@@ -11,3 +11,4 @@ print "queue $queue workers $workers\n";
 # worker pool
 # collect exit codes
 # move to fail on non zero
+# second failure goes to dead
