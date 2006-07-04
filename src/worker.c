@@ -14,3 +14,4 @@ int main(void)
 /* read a frame from stdin */
 /* count bytes */
 /* exit 1 on a short header */
+/* exit 2 when read fails */
