@@ -12,3 +12,4 @@ clean:
 
 .PHONY: test clean
 - c89
+- test target
