@@ -12,3 +12,4 @@ print "queue $queue workers $workers\n";
 # collect exit codes
 # move to fail on non zero
 # second failure goes to dead
+# refuse to start with no queue dir
