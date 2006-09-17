@@ -15,3 +15,4 @@ int main(void)
 /* count bytes */
 /* exit 1 on a short header */
 /* exit 2 when read fails */
+/* exit 3 on crash path */
