@@ -3,3 +3,4 @@
 ./worker < tests/frame_ok.bin || exit 1
 echo ok
 - ok frame passes
+- bad frame is not ok
