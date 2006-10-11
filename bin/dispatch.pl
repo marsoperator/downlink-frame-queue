@@ -14,3 +14,4 @@ print "queue $queue workers $workers\n";
 # second failure goes to dead
 # refuse to start with no queue dir
 # write reason to the fail file
+# usage text
