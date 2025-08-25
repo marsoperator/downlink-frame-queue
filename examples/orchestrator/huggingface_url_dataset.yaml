@@ -1,9 +1,6 @@
-# Caption Flow Configuration
-
 orchestrator:
   host: 0.0.0.0
   port: 8765
-  #ssl:
   #  # Use the paths output by 'caption-flow generate-cert' command
   #  cert: /etc/letsencrypt/live/caption.example.com/fullchain.pem  # From generate-cert output
   #  key: /etc/letsencrypt/live/caption.example.com/privkey.pem      # From generate-cert output
@@ -15,7 +12,8 @@ orchestrator:
   min_chunk_buffer: 10 # Minimum chunks to keep ready
   dataset:
     type: "huggingface" # or "local"
-    path: "RareConcepts/pixelvision-670k" # HF dataset path or local directory
+    processor_type: "huggingface_webdataset"
+    dataset_path: "RareConcepts/pixelvision-670k" # HF dataset path or local directory
     name: "pixelvision"
     version: "1.0"
     split: "images"
